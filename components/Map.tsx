@@ -5,7 +5,8 @@ import "maplibre-gl/dist/maplibre-gl.css";
 
 export default function MapComponent() {
     return (
-        <div style={{ width: "70vw", height: "70vh" }}>
+        // <div style={{ width: "70vw", height: "70vh" }}>
+        <div className="w-[60vw] h-[75vh] rounded overflow-hidden">
             <Map
                 initialViewState={{
                     longitude: -100,
