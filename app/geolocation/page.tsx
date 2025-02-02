@@ -2,12 +2,12 @@
 
 import { Map, GeolocateControl } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+// import { useState } from "react";
+// import { Button } from "@/components/ui/button";
 
 export default function GeolocateControlPage() {
-    const position = ["top-right", "top-left", "bottom-right", "bottom-left"];
-    const [positionControl, setPositionControl] = useState(position[2]);
+    // const position = ["top-right", "top-left", "bottom-right", "bottom-left"];
+    // const [positionControl, setPositionControl] = useState(position[2]);
 
     return (
         <div className="w-full h-[75vh] flex flex-col items-center justify-center">
@@ -22,12 +22,12 @@ export default function GeolocateControlPage() {
                 >
                     {/* Add a key prop to remount the GeolocateControl */}
                     <GeolocateControl
-                        key={positionControl}
-                        position={positionControl}
+                    // key={positionControl}
+                    // position={positionControl}
                     />
                 </Map>
             </div>
-            <div className="flex space-x-2 mt-4">
+            {/* <div className="flex space-x-2 mt-4">
                 {position.map((value) => {
                     const isActive = positionControl === value;
                     return (
@@ -40,7 +40,7 @@ export default function GeolocateControlPage() {
                         </Button>
                     );
                 })}
-            </div>
+            </div> */}
         </div>
     );
 }
