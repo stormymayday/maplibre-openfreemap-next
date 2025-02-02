@@ -10,7 +10,7 @@ export default function GeolocateControlPage() {
     // const [positionControl, setPositionControl] = useState(position[2]);
 
     return (
-        <div className="w-full h-[70vh] flex flex-col items-center justify-center">
+        <div className="w-full h-[90%] flex flex-col items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
