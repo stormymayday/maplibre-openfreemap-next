@@ -13,8 +13,10 @@ export default function MapComponent() {
     );
 
     return (
-        <>
-            <div className="w-full h-full rounded overflow-hidden">
+        // <div className="w-full h-[100%]">
+        <div className="flex flex-col gap-4 h-screen w-full">
+            {/* <div className="rounded overflow-hidden"> */}
+            <div className="flex-grow w-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
                         longitude: -100,
@@ -24,7 +26,7 @@ export default function MapComponent() {
                     mapStyle={mapStyle}
                 />
             </div>
-            <div className="flex space-x-2 mt-4">
+            <div className="flex space-x-2">
                 {mapStyles.map((style) => {
                     const isActive =
                         `https://tiles.openfreemap.org/styles/${style}` ===
@@ -44,6 +46,6 @@ export default function MapComponent() {
                     );
                 })}
             </div>
-        </>
+        </div>
     );
 }
