@@ -22,8 +22,8 @@ import Link from "next/link";
 const data = {
     navMain: [
         {
-            title: "Basic Map",
-            url: "/basic",
+            title: "Default Map",
+            url: "/default",
             icon: Map,
         },
         {

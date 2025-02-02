@@ -5,7 +5,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-export default function BasicMapPage() {
+export default function DefaultMap() {
     const mapStyles = ["positron", "bright", "liberty", "dark"];
 
     const [mapStyle, setMapStyle] = useState(
@@ -22,7 +22,7 @@ export default function BasicMapPage() {
                         zoom: 3,
                     }}
                     mapStyle={mapStyle}
-                />
+                ></Map>
             </div>
             <div className="flex space-x-2 mt-4">
                 {mapStyles.map((style) => {
