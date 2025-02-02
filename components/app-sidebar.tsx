@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Map, Earth, MapPin, Expand, LocateFixed } from "lucide-react";
+import { Map, Earth, MapPin, Expand, LocateFixed, Layers } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
 // import { NavUser } from "@/components/nav-user";
@@ -32,9 +32,14 @@ const data = {
             icon: Expand,
         },
         {
-            title: "Geolocate",
-            url: "/geolocate",
+            title: "Geolocation",
+            url: "/geolocation",
             icon: LocateFixed,
+        },
+        {
+            title: "Layers",
+            url: "/layers",
+            icon: Layers,
         },
         {
             title: "Marker",
