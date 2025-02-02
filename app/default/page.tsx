@@ -6,14 +6,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function DefaultMap() {
-    const mapStyles = ["positron", "bright", "liberty", "dark"];
+    const mapStyles = ["positron", "bright", "liberty"];
 
     const [mapStyle, setMapStyle] = useState(
         `https://tiles.openfreemap.org/styles/${mapStyles[0]}`
     );
 
     return (
-        <div className="w-full h-[75vh] flex flex-col items-center justify-center">
+        <div className="w-full h-[70vh] flex flex-col items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
