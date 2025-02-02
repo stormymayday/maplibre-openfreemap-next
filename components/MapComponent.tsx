@@ -13,8 +13,7 @@ export default function MapComponent() {
     );
 
     return (
-        <div className="bg-black w-full h-full h-[95%] flex flex-col items-center absolute top-0">
-            {/* <div className="bg-black w-full h-full h-[95%] flex flex-col items-center"> */}
+        <div className="w-full h-full pb-4 flex flex-col gap-4 items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
@@ -25,7 +24,7 @@ export default function MapComponent() {
                     mapStyle={mapStyle}
                 ></Map>
             </div>
-            <div className="flex space-x-2 mt-4">
+            <div className="flex gap-2">
                 {mapStyles.map((style) => {
                     const isActive =
                         `https://tiles.openfreemap.org/styles/${style}` ===
