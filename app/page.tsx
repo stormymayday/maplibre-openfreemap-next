@@ -13,7 +13,7 @@ export default function Home() {
     );
 
     return (
-        <div className="w-full h-full pb-4 flex flex-col gap-4 items-center justify-center">
+        <div className="w-full h-[83%] md:h-full pb-4 flex flex-col gap-4 items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
