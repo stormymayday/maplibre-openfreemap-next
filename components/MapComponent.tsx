@@ -6,17 +6,15 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function MapComponent() {
-    const mapStyles = ["positron", "bright", "liberty", "dark"];
+    const mapStyles = ["positron", "bright", "liberty"];
 
     const [mapStyle, setMapStyle] = useState(
         `https://tiles.openfreemap.org/styles/${mapStyles[0]}`
     );
 
     return (
-        // <div className="w-full h-[100%]">
-        <div className="flex flex-col gap-4 h-screen w-full">
-            {/* <div className="rounded overflow-hidden"> */}
-            <div className="flex-grow w-full rounded overflow-hidden">
+        <div className="w-full h-[65vh] flex flex-col items-center justify-center">
+            <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
                         longitude: -100,
@@ -24,9 +22,9 @@ export default function MapComponent() {
                         zoom: 3,
                     }}
                     mapStyle={mapStyle}
-                />
+                ></Map>
             </div>
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 mt-4">
                 {mapStyles.map((style) => {
                     const isActive =
                         `https://tiles.openfreemap.org/styles/${style}` ===
