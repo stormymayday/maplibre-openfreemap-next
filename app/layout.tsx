@@ -58,7 +58,7 @@ export default function RootLayout({
                                         <ModeToggle />
                                     </div>
                                 </header>
-                                <div className="h-[90vh] px-8 py-12 flex justify-center">
+                                <div className="bg-white h-[90vh] px-8 py-12 flex justify-center">
                                     {children}
                                 </div>
                             </SidebarInset>
