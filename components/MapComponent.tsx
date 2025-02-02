@@ -13,7 +13,8 @@ export default function MapComponent() {
     );
 
     return (
-        <div className="w-full h-full flex flex-col items-center justify-center">
+        <div className="bg-black w-full h-full h-[95%] flex flex-col items-center absolute top-0">
+            {/* <div className="bg-black w-full h-full h-[95%] flex flex-col items-center"> */}
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{

@@ -58,7 +58,10 @@ export default function RootLayout({
                                         <ModeToggle />
                                     </div>
                                 </header>
-                                <div className="bg-white h-[90vh] px-8 py-12 flex justify-center">
+                                {/* <div className="bg-white h-[90vh] px-8 py-12 flex justify-center"> */}
+                                {/* <div className="bg-white h-[90vh] flex flex-col items-start justify-start"> */}
+                                {/* <div className="bg-white h-[90vh] px-8 relative"> */}
+                                <div className="bg-white h-[90vh] px-8 flex flex-col items-center justify-start relative">
                                     {children}
                                 </div>
                             </SidebarInset>

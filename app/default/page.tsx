@@ -13,7 +13,7 @@ export default function DefaultMap() {
     );
 
     return (
-        <div className="w-full h-[70vh] flex flex-col items-center justify-center">
+        <div className="bg-red-500 w-full h-[70vh] h-[100%] pb-4 flex flex-col items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
