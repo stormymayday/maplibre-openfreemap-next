@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Map, Earth, MapPin, Expand } from "lucide-react";
+import { Map, Earth, MapPin, Expand, LocateFixed } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
 // import { NavUser } from "@/components/nav-user";
@@ -27,9 +27,14 @@ const data = {
             icon: Map,
         },
         {
-            title: "Fullscreen Control",
-            url: "/fullscreen-control",
+            title: "Fullscreen",
+            url: "/fullscreen",
             icon: Expand,
+        },
+        {
+            title: "Geolocate",
+            url: "/geolocate",
+            icon: LocateFixed,
         },
         {
             title: "Marker",

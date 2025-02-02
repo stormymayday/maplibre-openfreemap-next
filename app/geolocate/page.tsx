@@ -1,13 +1,13 @@
 "use client";
 
-import { Map, FullscreenControl } from "@vis.gl/react-maplibre";
+import { Map, GeolocateControl } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-export default function FullscreenControlPage() {
+export default function GeolocateControlPage() {
     const position = ["top-right", "top-left", "bottom-right", "bottom-left"];
-    const [positionControl, setPositionControl] = useState(position[3]);
+    const [positionControl, setPositionControl] = useState(position[2]);
 
     return (
         <div className="w-full h-[75vh] flex flex-col items-center justify-center">
@@ -20,8 +20,8 @@ export default function FullscreenControlPage() {
                     }}
                     mapStyle="https://tiles.openfreemap.org/styles/positron"
                 >
-                    {/* Add a key prop to remount the FullscreenControl */}
-                    <FullscreenControl
+                    {/* Add a key prop to remount the GeolocateControl */}
+                    <GeolocateControl
                         key={positionControl}
                         position={positionControl}
                     />
