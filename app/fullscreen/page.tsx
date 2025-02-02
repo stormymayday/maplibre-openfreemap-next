@@ -2,15 +2,15 @@
 
 import { Map, FullscreenControl } from "@vis.gl/react-maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+// import { useState } from "react";
+// import { Button } from "@/components/ui/button";
 
 export default function FullscreenControlPage() {
-    const position = ["top-right", "top-left", "bottom-right", "bottom-left"];
-    const [positionControl, setPositionControl] = useState(position[0]);
+    // const position = ["top-right", "top-left", "bottom-right", "bottom-left"];
+    // const [positionControl, setPositionControl] = useState(position[0]);
 
     return (
-        <div className="w-full h-[75vh] flex flex-col items-center justify-center">
+        <div className="w-full h-[80vh] flex flex-col items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
@@ -22,12 +22,12 @@ export default function FullscreenControlPage() {
                 >
                     {/* Add a key prop to remount the FullscreenControl */}
                     <FullscreenControl
-                        key={positionControl}
-                        position={positionControl}
+                    // key={positionControl}
+                    // position={positionControl}
                     />
                 </Map>
             </div>
-            <div className="flex space-x-2 mt-4">
+            {/* <div className="flex space-x-2 mt-4">
                 {position.map((value) => {
                     const isActive = positionControl === value;
                     return (
@@ -40,7 +40,7 @@ export default function FullscreenControlPage() {
                         </Button>
                     );
                 })}
-            </div>
+            </div> */}
         </div>
     );
 }
