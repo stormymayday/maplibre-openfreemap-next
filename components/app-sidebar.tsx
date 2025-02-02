@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Map, Earth, MapPin } from "lucide-react";
+import { Map, Earth, MapPin, Expand } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
 // import { NavUser } from "@/components/nav-user";
@@ -25,6 +25,11 @@ const data = {
             title: "Default Map",
             url: "/default",
             icon: Map,
+        },
+        {
+            title: "Fullscreen Control",
+            url: "/fullscreen-control",
+            icon: Expand,
         },
         {
             title: "Marker",
