@@ -10,7 +10,7 @@ export default function FullscreenControlPage() {
     // const [positionControl, setPositionControl] = useState(position[0]);
 
     return (
-        <div className="w-full h-[75vh] flex flex-col items-center justify-center">
+        <div className="w-full h-full flex flex-col items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
