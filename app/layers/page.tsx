@@ -74,7 +74,7 @@ export default function LayersPage() {
     // };
 
     return (
-        <div className="w-full h-[75vh] flex flex-col items-center justify-center">
+        <div className="w-full h-[83%] md:h-[95%] flex flex-col gap-4 items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
@@ -89,7 +89,7 @@ export default function LayersPage() {
                     <GeolocateControl />
                 </Map>
             </div>
-            <div className="flex space-x-2 mt-4">
+            <div className="flex gap-2">
                 <Button
                     onClick={() => {
                         setWoodFillColor(
