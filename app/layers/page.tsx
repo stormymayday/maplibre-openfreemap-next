@@ -74,7 +74,7 @@ export default function LayersPage() {
     // };
 
     return (
-        <div className="w-full h-[81%] md:h-[95%] flex flex-col gap-4 items-center justify-center">
+        <div className="w-full h-[80%] md:h-[95%] flex flex-col gap-4 items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
