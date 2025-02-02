@@ -61,7 +61,7 @@ export default function RootLayout({
                                 {/* <div className="bg-white h-[90vh] px-8 py-12 flex justify-center"> */}
                                 {/* <div className="bg-white h-[90vh] flex flex-col items-start justify-start"> */}
                                 {/* <div className="bg-white h-[90vh] px-8 relative"> */}
-                                <div className="bg-red-500 h-[90vh] px-8 pt-8 flex flex-col items-center justify-start">
+                                <div className="bg-red-500 h-[93.6vh] px-8 pt-8 flex flex-col items-center justify-start">
                                     {children}
                                 </div>
                             </SidebarInset>

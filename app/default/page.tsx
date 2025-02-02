@@ -14,7 +14,7 @@ export default function DefaultMap() {
 
     return (
         // <div className="w-full h-[85%] pb-4 flex flex-col gap-4 items-center justify-center">
-        <div className="w-full h-[85%] md:h-full  pb-4 flex flex-col gap-4 items-center justify-center">
+        <div className="w-full h-[85%] md:h-[100%]  pb-4 flex flex-col gap-4 items-center justify-center">
             <div className="w-full h-full rounded overflow-hidden">
                 <Map
                     initialViewState={{
